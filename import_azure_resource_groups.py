@@ -4,6 +4,8 @@ This script uses the Azure CLI to export ARM templates and attempts to run
 `terraformer` to produce Terraform files. It validates outputs by running
 `terraform init` and picks the provider output (if any) that succeeds.
 
+command: python .\TerraformAutomationImport\import_azure_resource_groups.py -s <your-subscription-id> -o .\output
+
 Notes:
 - Requires: `az`, `terraform`, and optionally `terraformer` on PATH.
 - Authentication: interactive `az login` or Service Principal via env vars
